@@ -1,6 +1,7 @@
 
 @import "./css/order.css";
 @import "./css/how.css";
+@import "./css/foter.css";
 
 body{
     margin: 0px;
@@ -147,6 +148,10 @@ padding: 10px;
 }
 
 
+
+
+
+
 .bg_main_1{
     background-color: var(--color_h1);
 }
@@ -155,7 +160,7 @@ padding: 10px;
     background-color: #caddea;
 }
 .head-0{
-     font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     text-align: center; 
     
@@ -164,6 +169,8 @@ padding: 10px;
 .bg_main_1{
     display: flex;
     align-items: center;
+    box-shadow: 2px 10px 10px rgba(2, 68, 121, 0.75);
+    height: 56px;
 
 }
 .bg_main_1 ul{
@@ -179,13 +186,19 @@ padding: 10px;
 }
 .bg_main_1 a{
     text-transform: uppercase;
-    padding: 13px 20px;
+    padding: 20px 20px;
     font-size: 20px;
     text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto_Refular;
+    color: var(--color_btn_text);
+    text-decoration: none;
+    position: relative;
 }
 
 .head-0 .border_li{
- padding: 2px 5px; 
+ padding: 2px 3px; 
 }
 
 .head-0 .border_li::after{
@@ -193,10 +206,18 @@ content: '';
 border: 2px solid white;
 border-radius: 3px;
 position: relative;
-left: 17px;
+left: -5px;
 
 
 }
+nav ul li a:hover{
+    background-color: var(--color_btn_send_message_hover);
+    color: var(--color_btn_text_hover);
+    box-shadow: -20px 0px 0px rgb(202, 221, 234),
+                 20px 0px 0px rgb(202, 221, 234, .99);
+    z-index: 1;
+  }
+
 
 
 
@@ -305,7 +326,8 @@ right: 1px;
 
 .wrapp img{
  position: relative;  
- margin-left: 470px;
+ margin-left: 450px;
+ margin-top: 3px;
 }
 
  select{
@@ -447,41 +469,115 @@ right: 1px;
 
 
 
+
+.grid{
+    padding: 10px 15px ;
+    background-image: url(./img/Bg1.svg);
+    font-family: Roboto_Regular;  
+    text-align: center;
+    font-size: 22px;
+  
+}
+
+.grid{
+display: grid;
+grid-template-columns: 300px 300px 300px 300px;
+grid-template-rows: 800px 800px 800px 800px;
+grid-column-gap: 30px;
+
+
+}
+
+.grid div{
+    border: 1px solid;
+  
+ 
+}
+
+.grid div ::after{
+    background-color: #ffffff;
+ 
+}
+.grid ::after{
+    background-color: #ffffff;
+    box-shadow: 10px 10px 5px #aaaaaa;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .wrapp2{
     background-image: url(./img/Bg1.svg);
-    font-family: Roboto_Regular;    
+    font-family: Roboto_Regular;   
+  
       
 }
 
-
- .col button{
-        background-color: #013056;
-        color: #fff;
-        text-align: center;
-}
-
-.col button::after{
-    content: '';
-    background-color: #075da2;
-}
-
- .text div{
-        margin-top: 50px;
-}
-
-.col{
-
-    width: 120px;
-    height: 700px;
-    border: 1px solid black;
-}
-.col :hover{
-    background-color: #ffffff;
-    border: 5px solid white;
-}
-.text h4{
+.wrapp2 h4{
     text-align: center;
+    color: #1b7fd0;
 }
+
+
+.card {
+    background-image: url(./img/Bg3.svg);
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: 140px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    border: none;
+
+    
+
+     
+}
+.card:hover{
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.btn-primary1 ,.btn-primary2 ,.btn-primary3 ,.btn-primary4{
+    color: #ffffff;
+    background-color:#075da2;
+   
+ 
+}
+.btn-primary1{
+    margin-top:135px ;
+   
+}
+.btn-primary3,.btn-primary4{
+    margin-top:70px ;
+   
+}
+
+
+
+
+
+
 
 .elem1::after{
     content: '';
@@ -495,10 +591,10 @@ right: 1px;
     
 
 }
-.elem1:hover::after{
+ .elem1:hover::after{
     content: '';
     background-image: url(./img/Element1_dark.svg);
-}
+} 
 
 .elem2::after{
     content: '';
@@ -512,7 +608,7 @@ right: 1px;
     
 
 }
-.elem2::after{
+.elem2:hover:after{
     content: "";
     background-image: url(./img/Element2_dark.svg);
 }
@@ -527,7 +623,7 @@ right: 1px;
     margin-left: 70px;
     
     }
-    .elem3::after{
+    .elem3:hover:after{
         content: "";
         background-image: url(./img/Element3_dark.svg);
     }
@@ -540,10 +636,11 @@ right: 1px;
         position: relative;
         display: inline-block;
         background-repeat: no-repeat;
-        margin-left: 70px;
+        margin-left: 70px;}
+       
         
     
-    }
+    
     .elem4:hover::after{
         content: '';
         background-image: url(./img//Element4_dark.svg);

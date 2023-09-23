@@ -1,21 +1,23 @@
-.wed{
+.container-fluid_wed{
     background-color: white;
 }
 
-.wed h2{
+.container-fluid_wed h2{
     position: relative;
     text-align: center;
    margin-bottom: 20px;
     border: 2px solid #caddea;
-    background-color: #caddea;
-  }
-.wed h2::before{
+   
+}
+   
+  
+.container-fluid_wed h2::before{
  content: '';
   border-top: 23px solid #caddea;
   border-right: 23px solid transparent;
   position: relative;
   top:55px ;
-  right: 526px;
+  left: -527px;
   }
 
   .wed strong{
@@ -23,19 +25,16 @@
     color: #caddea;
   }
 
-
+.menu {
+  width: 400px;
+}
 
 
   .text-black{
-    width: 770px;
+    width: 830px;
     float: left;
   }
-  .text-dark{
-    float: right;
-    width: 500px;
-    height: 460px;
-    border: 2px solid;
-  }
+
 
   .nol{
     background-color: #ffffff;;
@@ -48,15 +47,17 @@
     content: '';
     width: 0; 
     height: 0;
-    border-top: 27px solid #caddea;
+    border-top: 27px solid #013056;
     border-right: 27px solid transparent;
     position: relative;
-    top:70px ;
-    right: 199px;
+    top:88px ;
+  
     }
 
     .text_1{
         display: none;
+        width: 400px;
+        
 
     }
 
@@ -67,43 +68,90 @@
     
 
 
-  .menu_list{
+ 
+
+
+  .text-ex-tooltip {
     position: relative;
-    background-color: hwb(0 99% 1% 0px);
-    border-color:  hsl(0, 0%, 99% 0);
-    padding: 17px 350px;
-    margin: 5px 10px 200px 50px;
-    opacity: 0;
-  } 
+    background-color: #fff;
+  }
 
-   .menu_drop{
-position: absolute;
-width: 500px;
-height: 500px;
- opacity:0 ;  
- margin: -50px 10px 20px 800px;
- padding: 50px;
-
-} 
-.menu_list:hover {
-background-color: rgb(255, 255, 255, );
-opacity: 0.7;
-border-color: rgba(0, 48, 87, 0);
-}
-
-   .menu .ah{
-
-    display: block;
-    background-color: hsl(0, 0%, 99%);
+  .text-ex-tooltip:hover{
+    background-color: #013056;
+    
+  }
+  .text-ex-tooltip:hover::before{
+    content: "";
+    width: 0;
+	  height: 0;
+	border-top: 27px solid transparent;
+	border-left: 40px solid #013056;
+	border-bottom: 40px solid transparent;
+  float: right;
+  position: absolute;
+  margin-left: 820px;
+  background-color: #ffffff;
  
-  } 
-
-
-   .menu_list:hover .menu_drop{
-      opacity: 1;  
-    background-color: #ffffff;
  
+    
+  }
+
+
+
+
+  .tooltip-content p{
+    color: black;
+  }
+  
+  .text-ex-tooltip h4::before{
+    color: #013056;
+  }
+  .text-ex-tooltip h4:hover{
+    color: #ffffff;
+  }
+  .ap p {
    
-  }  
+    margin: -160px 20px 20px 300px;
+ 
+   }
+   .ap img{
+   margin-left: -280px ;
+   }
+  .al p {
+  
+    margin: -150px 20px 20px 0px;
+    
+   }
+  .am p {
+  
+    margin: -200px 20px 20px 0px;
+   
+   }
+   .an p{
+    margin: -100px 20px 20px 0px; 
+  }
+    
+    strong{
+      color:#caddea ;
+      font-size: 40px;
+    }
+  .text-ex-tooltip .tooltip-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Фон подсказки */
+    padding: 0rem 1.2rem; /* Отступы от края */
+    top: -20%; /* Позиция подсказки */
+    text-align: center;
+    font-size: 1rem;
+    color: #1ca8c4; /* Цвет текста */
+    margin: -15px 40px 40px 900px;
+    width: 500px;
+  }
+  .text-ex-tooltip:hover .tooltip-content {
+    display: block;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    color: black;
+  }
 
-
+ 
+       

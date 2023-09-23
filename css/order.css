@@ -46,6 +46,7 @@ position: relative;
   -webkit-box-align: start;
   align-items: flex-start;
   display: -webkit-box;
+
  
 }
 .order3 ul li{
@@ -66,6 +67,10 @@ position: relative;
 }
 .order3 .ip ul li{
   margin: -230px 0px 0px -290px;
+  color: #1b7fd0;
+}
+.order3 .op ul li{
+  color: #1b7fd0;
 }
 
 .order3 ul{
